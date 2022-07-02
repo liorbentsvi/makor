@@ -1,0 +1,276 @@
+﻿body {
+    direction: rtl;
+  
+}
+header {
+    display: inline-block;
+    width: 100%;
+    border-style: solid;
+    border-block-color: rgb(204, 4, 251);
+}
+/*תחתון קו מוריד
+*/
+ul li a {
+text-decoration: none;
+}
+nav {
+    margin-right: 100px;
+}
+#logo {
+    display: inline-block;
+    margin-top: 8px;
+    float: right;
+    width:110px;
+    height:60px;
+}
+
+.skip-main {
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+}
+
+
+#wrap {
+    font-size: 16px;
+    padding: 14px 16px;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    z-index: 99;
+    position: relative;
+}
+
+.navbar {
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+    .navbar li {
+        height: auto;
+        width: 190px;
+        float: right;
+        text-align: center;
+        list-style: none;
+        font-family: Segoe UI;
+        font-style: normal;
+        padding: 5px;
+        margin: -15px;
+    }
+
+
+
+
+    .navbar a  {
+        padding: 18px 0;
+        color: black;
+        display: block;
+    }
+
+
+        .navbar a:hover {
+            padding: 18px 0;
+            color: black;
+            display: block;
+            color: rgb(240, 123, 109);
+        }
+
+
+
+    .navbar li ul {
+        display: none;
+        height: auto;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .navbar li:hover ul { /*גורם לתת תפריט להופיע*/
+        display: block;
+
+    } 
+
+.navbar li ul li { 
+    color: white;
+}
+
+
+    .navbar li ul li a:hover {
+        color: black;
+    }
+
+
+
+footer {
+    padding: 50px 0 50px 0;
+    text-align: center;
+    font-size: 30px;
+    font-family: Segoe UI;
+    background-color: darkblue;
+  
+}
+
+    footer nav li {
+        display: inline-block;
+        margin-left: 170px;
+   
+    }
+
+
+    footer nav ul li a:hover {
+        color: rgb(240, 123, 109);
+    }
+
+        footer nav li a {
+            color: white;
+            text-decoration: none;
+            
+        }
+
+    footer p {
+        margin-top: 70px;
+        color:white;
+        font-size: 14px;
+     
+    }
+
+
+/*give all elements this
+command*/
+* {
+    box-sizing: border-box;
+
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+}
+
+/* Hide the images by default */
+
+#first_image {
+    display: block;
+}
+
+.mySlides {
+    display: none;
+   margin-left:100px;
+   margin-right:100px;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 1350px;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 1350px;
+    border-radius: 3px 0 0 3px;
+}
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgb(204, 4, 251);
+    }
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: rgb(204, 4, 251);
+    padding: 2px 30px;
+    color: white;
+    font-size: 30px;
+    font-family: Segoe UI;
+    font-weight: bold;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+
+.galery {
+    font-family: Segoe UI;
+    font-size: 70px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(204, 4, 251);
+}
+
+
+
+nav ol li {
+    display: inline-block;
+    font-family: Segoe UI;
+    font-size: 20px;
+}
+
+    nav ol li:after {
+        content: ">";
+    }
+
+    nav ol li:last-child:after {
+        content: "";
+    }
+
+
+
+#wrap .navbar .notActive1 {
+    color: dimgray;
+}

@@ -1,0 +1,181 @@
+﻿<!doctype html>
+<html lang="">
+<head>
+
+    <meta charset="utf-8" />
+    <title>גלריה</title>
+    <link rel="icon" href=img/hamakor.png />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!-- CSS -->
+    <!--<link href="styles/reset.css" rel="stylesheet" />-->
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-3.6.0.min.js"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <div id="container">
+        <header>
+            <a href="../home" class="logo-link">
+                <img id="logo" src="img/hamakor.png" height="30" alt="לוגו האתר - המקור" />
+            </a>
+            <a class="skip-main" href="#about">דלג לתוכן</a>
+            <nav  aria- label="header nav">
+
+                <div id="wrap">
+                    <ul class="navbar">
+
+                        <li class="dropdown"><a href="../home/">בית</a></li>
+
+                        <li>
+                            <a href="#">מידע על הציפורים </a>
+                            <ul>
+                                <li><a href="../info_bird/"> מידע כללי</a></li>
+                                <li><a href="#" class="notActive1"> ציפורים מיוחדות</a></li>
+                                <li><a href="../galery/"> גלריה</a></li>
+                                <li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">מקומות תצפית</a>
+                            <ul>
+                                <li> <a href="#" class="notActive1"> מקומות נדידה</a></li>
+                                <li> <a href="#" class="notActive1"> שמורות טבע של ציפורים</a></li>
+                                <li><a href="#" class="notActive1">יערות </a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" class="notActive1">מאמרים</a>
+
+                        </li>
+
+                        <li>
+                            <a href="#" class="notActive1">טיפי מקור</a>
+                        </li>
+
+                        <li>
+                            <a href="../about/">אודות</a>
+                        </li>
+
+                        <li>
+                            <a href="../contect/">צור קשר</a>
+                        </li>
+
+                        <li>
+                            <a href="../map/">מפת האתר</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </header>
+
+        <nav  aria- label="breadcrumbs nav">
+            <ol>
+                <li><a href="../home/">דף הבית</a></li>
+                <li>מידע על ציפורים</li>
+                <li>גלריה</li>
+            </ol>
+        </nav>
+
+
+
+
+        <h1 class="galery">גלריה</h1>
+
+        <!-- Container for the image gallery -->
+        <div class="container">
+
+            <!-- Full-width images with number text -->
+            <div id="first_image" class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="img/shaldag_galerya.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="img/flamingo_galerya.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="img/nesher_galerya.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="img/shahror_galery.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="img/yeorit_galerya.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="img/toki2.png" style="width:100%">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Image text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail images -->
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="img/shaldag_galerya.png" style="width:100%" onclick="currentSlide(1)" alt="שלדג גמדי - אקריליק על קנבס">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/flamingo_galerya.png" style="width:100%" onclick="currentSlide(2)" alt="פלמינגו- שמן על בד">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/nesher_galerya.png" style="width:100%" onclick="currentSlide(3)" alt="נשר">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/shahror_galery.png" style="width:100%" onclick="currentSlide(4)" alt="שחרור">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/yeorit_galerya.png" style="width:100%" onclick="currentSlide(5)" alt="יאורית מצרית">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/toki2.png" style="width:100%" onclick="currentSlide(6)" alt="תוכי ">
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <footer>
+            <nav  aria- label="footer nav">
+                <ul>
+                    <li><a href="../contect/">צור קשר</a></li>
+                    <li><a href="../map/">מפת אתר</a></li>
+                    <li><a href="../about/">אודות</a></li>
+                </ul>
+            </nav>
+
+            <p>
+                המקור ©  2022<br />
+                עפים אל המקורות
+            </p>
+        </footer>
+
+    </div>
+   
+
+</body>
+</html>

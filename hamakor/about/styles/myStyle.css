@@ -1,0 +1,208 @@
+﻿body {
+    direction: rtl;
+    background-color: rgb(0, 2, 85);
+    background-image: url("../img/reka.png");
+    width: auto;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 85%;
+
+}
+header {
+    display: inline-block;
+    width: 100%;
+}
+/*תחתון קו מוריד
+*/
+ul li a {
+text-decoration: none;
+}
+nav {
+    margin-right: 100px;
+}
+#logo {
+    display: inline-block;
+    margin-top: 8px;
+    float: right;
+    width:110px;
+    height:60px;
+}
+
+.skip-main {
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+}
+
+
+#wrap {
+    font-size: 16px;
+    padding: 14px 16px;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    z-index: 99;
+    position: relative;
+}
+
+.navbar {
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+    .navbar li {
+        height: auto;
+        width: 190px;
+        float: right;
+        text-align: center;
+        list-style: none;
+        font-family: Segoe UI;
+        font-style: normal;
+        padding: 5px;
+        margin: -15px;
+    }
+
+
+
+
+    .navbar a  {
+        padding: 18px 0;
+        color: white;
+        display: block;
+    }
+
+
+        .navbar a:hover {
+            padding: 18px 0;
+            color: white;
+            display: block;
+            color: rgb(240, 123, 109);
+        }
+
+
+
+    .navbar li ul {
+        display: none;
+        height: auto;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .navbar li:hover ul { /*גורם לתת תפריט להופיע*/
+        display: block;
+
+    } 
+
+.navbar li ul li { 
+    color: rgb(240, 123, 109);
+}
+
+
+    .navbar li ul li a:hover {
+        color: rgb(240, 123, 109);
+    }
+
+
+footer {
+    padding: 50px 0 50px 0;
+    text-align: center;
+    font-size: 30px;
+    font-family: Segoe UI;
+    
+}
+
+    footer nav li {
+        display: inline-block;
+        margin-left: 170px;
+    }
+
+
+    footer nav ul li a:hover {
+        color: rgb(240, 123, 109);
+    }
+
+    footer nav li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    footer p {
+        margin-top: 70px;
+        color: white;
+        font-size: 14px;
+    }
+
+
+#about {
+    font-family: Segoe UI;
+    font-size:25px;
+}
+
+
+
+h1 {
+    text-align: center;
+     font-size:30px;
+}
+
+#logo_mahon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#link {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+#picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section ul li a 
+{
+color: white;
+}
+
+#link_galery {
+    text-decoration: none;
+        color: white;
+}
+
+
+    #link_galery:hover {
+        text-decoration: underline;
+    }
+
+
+section ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ol li {
+    display: inline-block;
+    font-family: Segoe UI;
+    font-size: 20px;
+}
+
+nav ol li:after {
+   content:">";
+}
+
+    nav ol li:last-child:after {
+        content: "";
+    }
+
+#wrap .navbar .notActive1 {
+    color: dimgray;
+}
